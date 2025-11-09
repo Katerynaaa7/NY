@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  overflow: hidden;
+  background-image: url(./images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.opacity {
+  backdrop-filter: brightness(0.6);
+  transition: 0.3s;
+}
+
+.text {
+  display: none;
+}
+
+.active {
+  display: block;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #eeff11, #032eff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+header {
+  background-color: #ffffff5c;
+  padding: 10px 20px;
+}
+
+header a {
+    display: inline-block;
+    width: 150px;
+}
+
+header a:hover {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+header a img {
+  width: 150px;
+  margin: 20px;
+  margin: 0;
+}
+
+h2 {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  margin: 0; 
+  font-size: 40px;
+  text-align: center;
+  color: yellow;
+  animation: light 3s linear infinite;
+}
+
+h1 {
+  margin: 30px 0 0 0;
+  font-size: 55px;
+  text-align: center;
+  line-height: 1;
+  color: yellow;
+  text-shadow: 0 0 15px #1f1f18, 0 0 25px #616141;
+}
+
+h1 p {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 15px 0;
+}
+
+h1 p:last-of-type {
+  margin: 0;
+}
+
+.gift-container {
+  display: inline-block;
+  position: relative;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.gift img {
+  width: 400px;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.5s ease;
+  filter: drop-shadow(0 0 8px #000000);
+}
+
+.gift img:hover{
+  filter: drop-shadow(0 0 8px #aeefff);
+  transition: 0.5s;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+.spin {
+  animation: spin 2.5s linear infinite;
+}
+
+.special {
+  color: #ff9700;
+}
+
+.wish {
+  display: none;
+}
+
+.wish.show {
+  display: block;
+  opacity: 1;
+  position: relative;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: all 1.5s ease;
+  border-radius: 20px;
+  padding: 20px;
+  background: radial-gradient(circle, rgb(245 245 245) 0%, rgb(192 217 248) 100%);
+  color: #000000;
+}
+
+.wish.show p {
+  margin: 0 0 20px 0;
+}
+
+.wish.show p:last-of-type{
+  margin: 0;
+}
+
+.gift-hide {
+  display: none;
+}
+
+.pulse1 {
+  display: block;
+  animation: pulse 1.5s infinite alternate;
+}
+
+.pulse2 {
+  display: block;
+  animation: pulse 2s infinite alternate;
+}
+
+.pulse3 {
+  display: block;
+  animation: pulse 2.5s infinite alternate;
+}
+
+.pulse4 {
+  display: block;
+  animation: pulse 3s infinite alternate;
+}
+
+.pulse5 {
+  display: block;
+  animation: pulse 3.5s infinite alternate;
+}
+
+.tree {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 160px;
+  animation: blink 1.5s infinite alternate;
+  z-index: -1;
+}
+
+.snowflake {
+  color: #8fe3ff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+	@-webkit-keyframes snowflakes-fall
+    {0%{top:-10%}100%{top:100%}}
+    @-webkit-keyframes snowflakes-shake
+    {0%{-webkit-transform:translateX(0px);transform:translateX(0px)}
+    50%{-webkit-transform:translateX(80px);transform:translateX(80px)}
+    100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}
+    
+    @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+    @keyframes snowflakes-shake{0%{transform:translateX(0px)}
+    50%{transform:translateX(80px)}
+    100%{transform:translateX(0px)}}.snowflake{
+        position:fixed;top:-10%;z-index:9999;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none
+        ;user-select:none;
+        cursor:default;
+        -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+        -webkit-animation-duration:10s,3s;
+        -webkit-animation-timing-function:linear,ease-in-out;
+        -webkit-animation-iteration-count:infinite,infinite;
+        -webkit-animation-play-state:running,running;
+        animation-name:snowflakes-fall,snowflakes-shake;
+        animation-duration:10s,3s;
+        animation-timing-function:linear,ease-in-out;
+        animation-iteration-count:infinite,infinite;
+        animation-play-state:running,running}.snowflake:nth-of-type(0){
+            left:1%;-webkit-animation-delay:0s,0s;
+            animation-delay:0s,0s}.snowflake:nth-of-type(1){
+                left:10%;-webkit-animation-delay:1s,1s;
+            animation-delay:1s,1s}.snowflake:nth-of-type(2){
+                left:20%;-webkit-animation-delay:6s,.5s;
+            animation-delay:6s,.5s}.snowflake:nth-of-type(3){
+                left:30%;-webkit-animation-delay:4s,2s;
+            animation-delay:4s,2s}.snowflake:nth-of-type(4){
+                left:40%;-webkit-animation-delay:2s,2s;
+            animation-delay:2s,2s}.snowflake:nth-of-type(5){
+                left:50%;-webkit-animation-delay:8s,3s;
+            animation-delay:8s,3s}.snowflake:nth-of-type(6){
+                left:60%;-webkit-animation-delay:6s,2s;
+            animation-delay:6s,2s}.snowflake:nth-of-type(7){
+                left:70%;-webkit-animation-delay:2.5s,1s;
+            animation-delay:2.5s,1s}.snowflake:nth-of-type(8){
+                left:80%;-webkit-animation-delay:1s,0s;
+            animation-delay:1s,0s}.snowflake:nth-of-type(9){
+                left:90%;-webkit-animation-delay:3s,1.5s;
+            animation-delay:3s,1.5s}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
+
+@keyframes pulse {
+    0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes light {
+  0% {
+    text-shadow: 0 0 15px yellow, 0 0 25px #4d4d0c;
+  }
+  50% {
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  }
+  100% {
+    text-shadow: 0 0 15px yellow, 0 0 25px #4d4d0c; 
+  }
+}
+
+@keyframes float {
+  from { transform: rotate(-10deg) scale(1); }
+  to { transform: rotate(10deg) scale(1); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg) scale(1.1); }
+  to { transform: rotate(360deg) scale(1.1); }
+}
