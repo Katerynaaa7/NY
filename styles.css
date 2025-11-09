@@ -150,6 +150,20 @@ h1 p:last-of-type {
   display: none;
 }
 
+.elem {
+  display: block;
+  position: absolute;
+  top: 220px;
+  width: 60px;
+  right: 80px;
+  filter: invert(1);
+  transform: rotate(338deg);
+}
+
+.hide {
+  display: none;
+}
+
 .pulse1 {
   display: block;
   animation: pulse 1.5s infinite alternate;
