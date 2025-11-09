@@ -87,7 +87,7 @@ h1 p:last-of-type {
 .gift-container {
   display: inline-block;
   position: relative;
-  top: 23%;
+  top: 150px;
   left: 50%;
   transform: translate(-50%,-50%);
 }
