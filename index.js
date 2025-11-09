@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 const text = document.querySelector(".text");
 const giftIcon = document.querySelector(".gift img");
+const elem = document.querySelector(".elem");
 const gift = document.getElementById("gift");
 const wish = document.getElementById("wish");
 
@@ -24,6 +25,7 @@ gift.addEventListener("click", () => {
   giftIcon.classList.remove ("float");
   giftIcon.classList.add("spin");
   giftIcon.style.pointerEvents = 'none';
+  elem.classList.add("hide");
 
   const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
   
