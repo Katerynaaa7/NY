@@ -10,7 +10,7 @@ body {
 }
 
 .opacity {
-  backdrop-filter: brightness(0.6);
+  backdrop-filter: brightness(0.5);
   transition: 0.3s;
 }
 
